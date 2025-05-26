@@ -18,3 +18,6 @@ data/*
 # Misc
 .DS_Store
 *.swp
+
+data/tcga_brca_subset/*.tsv
+data/tcga_brca_subset/excluded/*.tsv
