@@ -1,0 +1,9 @@
+pyspark==3.4.0
+pymongo==4.6.1
+mongo-spark-connector==10.2.0
+xgboost==2.0.3
+seaborn==0.13.2
+matplotlib==3.8.2
+streamlit==1.28.0
+pytest==7.4.0
+flake8==6.0.0

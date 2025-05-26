@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+*.egg-info/
+
+# Docker
+data/*
+*.log
+
+# Jupyter
+*.ipynb_checkpoints/
+
+# Misc
+.DS_Store
+*.swp

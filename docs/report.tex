@@ -1,0 +1,48 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{parskip}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+
+\begin{document}
+
+\title{Gene Expression Analysis for Early Cancer Detection}
+\author{Your Name}
+\date{May 2025}
+\maketitle
+
+\begin{abstract}
+This project leverages Apache Spark and MongoDB to analyze RNA-Seq data for early breast cancer detection. We identify significant genes using Random Forest and XGBoost models, achieving high classification accuracy.
+\end{abstract}
+
+\section{Introduction}
+Breast cancer remains a leading cause of mortality. This study uses gene expression data to detect cancer-specific profiles, processed with Apache Spark and stored in MongoDB.
+
+\section{Methods}
+\subsection{Data}
+RNA-Seq data from TCGA (BRCA cohort) was used, comprising expression levels for thousands of genes.
+
+\subsection{Modeling}
+We trained Random Forest and XGBoost models to classify samples and identify significant genes.
+
+\section{Results}
+Top genes (e.g., TP53, BRCA1) showed strong predictive power. Visualizations include volcano plots and feature importance charts.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/gene_importance.png}
+    \caption{Top 10 significant genes.}
+\end{figure}
+
+\section{Conclusion}
+Our pipeline offers a scalable solution for cancer detection, with results stored in MongoDB for easy access.
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
