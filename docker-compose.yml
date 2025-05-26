@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    networks:
+      - my-network
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./data/mongodb:/data/db
+  spark:
+    image: apache/spark:latest
+    container_name: spark
+    networks:
+      - my-network
+    ports:
+      - "8080:8080"
+      - "7077:7077"
+    volumes:
+      - ./data:/data
+      - ./src:/src
+networks:
+  my-network:
+    driver: bridge
+volumes:
+  mongodb_data:
