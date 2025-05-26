@@ -10,7 +10,7 @@ services:
     volumes:
       - ./data/mongodb:/data/db
   spark:
-    image: apache/spark:latest
+    image: bitnami/spark:latest
     container_name: spark
     networks:
       - my-network
@@ -20,6 +20,8 @@ services:
     volumes:
       - ./data:/data
       - ./src:/src
+    environment:
+      - SPARK_MODE=master
 networks:
   my-network:
     driver: bridge
